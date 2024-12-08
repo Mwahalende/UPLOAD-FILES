@@ -40,7 +40,7 @@ app.get('/', (req, res) => {
 });
 */
 // File upload route
-app.post('/upload', upload.single('file'), (req, res) => {
+app.post('/upload', upload.array('file',30), (req, res) => {
   try {
     if (!req.file) {
       return res.status(400).send('No file uploaded.');

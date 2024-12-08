@@ -4,6 +4,7 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 app.use(express.static('public'));
+app.use('/uploads',express.static('uploads'));
 app.set('views engine','ejs')
 // Configure Multer Storage
 const storage = multer.diskStorage({

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    body{
+    background: linear-gradient(blue,green);
+    }
+    form{
+    background:linear-gradient(red,blue);
+    width: 500px;
+    height: 230px;
+    margin: auto;
+    border: 1px solid blueviolet;
+    padding: auto;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 100px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 3px 2px gainsboro;
+    }
+h1{
+    text-align: center;
+    font-size: 30px;
+    color: aliceblue;
+    margin-top: 40px;
+}
+button{
+    background-color: aliceblue;
+    width: 300px;
+    height: 70px;
+    color: rgb(19, 20, 20);
+    font-size: 30px;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+input {
+width: 300px;
+margin: 20px;
+color:aliceblue ;
+margin-top: 30px;
+}
+span{
+    font-size: 60px;
+    color: yellow;
+}
+.man{
+height: 500px;
+width: 600px;
+border: 0.4px solid aliceblue;
+margin: auto;
+border-radius: 10px;
+    box-shadow: 1px 2px 3px 2px gray;
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEO GALAXY</title>
+</head>
+<body>
+   <div class="man">
+    <h1>FOR ADMIN ONLY CAN UPLOAD FILES IN THIS APP</h1>
+    <form action="/upload" method="POST" enctype="multipart/form-data" novalidate target="_self">
+   <span>&#9755</span>   <input type="file" name="file" placeholder="choose file need" />
+      <button type="submit" onclick="back()">Upload</button>
+    </form>
+    </div>
+    <script>
+    function back(){
+        history.back();
+        }
+        </script>
+</body>
+</html>
